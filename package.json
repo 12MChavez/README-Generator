@@ -1,0 +1,27 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "command-line README generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/12MChavez/README-Generator.git"
+  },
+  "keywords": [
+    "node",
+    "Inquirer",
+    "javascript"
+  ],
+  "author": "Melissa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/12MChavez/README-Generator/issues"
+  },
+  "homepage": "https://github.com/12MChavez/README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.0.0"
+  }
+}
