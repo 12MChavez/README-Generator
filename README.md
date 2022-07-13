@@ -21,6 +21,7 @@ Project is created with:
 * README.md file will be generated with your answers.  
 ![Screenshot](./images/markup.JPG)
 
+* Preview
 ![Screenshot](./images/preview.JPG)
 
 ## Contributions
