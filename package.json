@@ -6,6 +6,7 @@
   "scripts": {
     "test": "none"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/12MChavez/README-Generator.git"
@@ -23,5 +24,6 @@
   "homepage": "https://github.com/12MChavez/README-Generator#readme",
   "dependencies": {
     "inquirer": "^9.0.0"
-  }
+  },
+  "devDependencies": {}
 }

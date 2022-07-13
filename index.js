@@ -1,9 +1,27 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
+import inquirer from 'inquirer';
+import fs from 'fs';
+
 
 const generateREADME = ({title, description, motivation, problemSolved, whatLearned, standOut}) => 
 
-`html goes here`;
+`
+# ${title}
+
+## Description:
+${description}
+
+## Motivation:
+${motivation}
+
+## Problem Solved:
+${problemSolved}
+
+## What Learned:
+${whatLearned}
+
+## Stand Out
+${standOut}
+`;
 
 inquirer
     .prompt([
@@ -40,8 +58,8 @@ inquirer
     ])
 
     .then((response) => {
-        const htmlContent = generateREADME(response);
+        const README = generateREADME(response);
 
-        fs.writeFile('index.html', htmlContent, (err) => err ? console.log(err) : console.log('index.html generated'))
-    })
+        fs.writeFile('README.md', README, (err) => err ? console.log(err) : console.log('README.md generated'))
+    });
 
