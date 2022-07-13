@@ -12,17 +12,20 @@ This is a node.js README generator.
 ## Technologies
 Project is created with:
 * JavaScript
-* HTML
-* CSS
 * Node.js
 
 ## App
 * Answer the prompts. 
-![Screenshot](./assets/images/weather-search.JPG)
+![Screenshot](./images/prompts.png)
 
-* README.md file will be generated with your answers. 
-![Screenshot](./assets/images/not-found.JPG)
+* README.md file will be generated with your answers.  
+![Screenshot](./images/markup.JPG)
 
+![Screenshot](./images/preview.JPG)
+
+## Contributions
+* I used a similar project as a template for this project. 
+* Thank you for your debugging help Keshia! 
 
 ## Contact me
 
