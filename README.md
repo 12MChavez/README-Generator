@@ -7,7 +7,7 @@
 * [Contact me](#contact-me)
 
 ## General info
-This is a node.js README generator.  
+This is a node.js README generator. A generated example README is located in the distribution directory.  
 
 ## Technologies
 Project is created with:

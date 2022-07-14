@@ -2,10 +2,17 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 
 
-const generateREADME = ({title, description, motivation, problemSolved, whatLearned, standOut}) => 
+const generateREADME = ({title, description, motivation, problemSolved, whatLearned, emailAddress, github}) => 
 
 `
 # ${title}
+
+## Table of contents
+* [Description](#description)
+* [Motivation](#motivation)
+* [Problem Solved](#problem-solved)
+* [What Learned](#what-learned)
+* [Contact me](#contact-me)
 
 ## Description:
 ${description}
@@ -19,8 +26,9 @@ ${problemSolved}
 ## What Learned:
 ${whatLearned}
 
-## Stand Out
-${standOut}
+## Contact me
+* [Email: ${emailAddress}](mailto:${emailAddress}) 
+* [GitHub: ${github}](https://github.com/${github})
 `;
 
 inquirer
@@ -33,7 +41,7 @@ inquirer
     {
         type: 'input',
         name: 'description',
-        message: 'Describe your app.'
+        message: 'Describe your app?'
     },
     {
         type: 'input',
@@ -52,14 +60,19 @@ inquirer
     },
     {
         type: 'input',
-        name: 'standOut',
-        message: 'What makes your app stand out?'
+        name: 'emailAddress',
+        message: 'What is your email?'
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github?'
     }
     ])
 
     .then((response) => {
         const README = generateREADME(response);
 
-        fs.writeFile('README.md', README, (err) => err ? console.log(err) : console.log('README.md generated'))
+        fs.writeFile('distribution/README.md', README, (err) => err ? console.log(err) : console.log('README.md generated'))
     });
 
